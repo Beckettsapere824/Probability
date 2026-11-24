@@ -10,12 +10,13 @@ Probability is a **full peer track** to Machine Learning—not an afterthought.
 
 - **Shared dashboard / mastery:** `Beckettsapere824/c-machine-learning` → `STUDY_BOARD.md`, `learning/mastery.md`
 - **This repo:** Probability `nodes/`, YAML tree, local `AGENT.md` + `skills/`
-- **Roles:** `learn-teach-*` (content), `learn-assess-*` (mastery on shared board), `learn-library-*` (course file index on c-ml when needed)
+- **Roles:** `learn-teach-*` (content), `learn-assess-*` (mastery on shared board), `learn-library-*` (course file index)
 
 ## Structure / 结构
 
 - `data/prerequisite_tree.yaml`: Full machine-readable prerequisite tree.
 - `nodes/`: One Markdown file per knowledge node. Bilingual (EN then ZH).
+- `course/SDST2601A/`: Structured extracts from HKU STAT2601A / SDST2601A lecture notes (Ch 1–8 + common distributions table). Canonical source catalog maintained by library.
 - `AGENT.md` + `skills/`: Agent harness for study dialogs.
 - `progress.md` / `session-handoff.md`: Session continuity.
 
