@@ -16,6 +16,20 @@ Run `./init.sh` when shell available. Prefer `./tools/assert_no_stub.sh` before 
 
 ---
 
+## HARD GATE: Local mirror (every dialog)
+
+Grok does **not** auto-mount GitHub as the workspace. **Connector-only reads are not enough.**
+
+Before any product write:
+
+1. Write into the **dialog local workspace** at least: `AGENT.md`, `MEMORY.md`, `CONSTRUCTION.md`, `feature_list.json`, `progress.md`, `skills/README.md`, `skills/anti-drift/SKILL.md`, `session-contract.md` (identity, repo, next_exact, mirror_ok).
+2. Verify local presence. If missing → **stop** and mirror.
+3. Human having to remind = **DIALOG_MISS** (Orches `docs/LOCAL_MIRROR.md`). Do not rewrite harness to excuse it.
+
+Durable edits: **local first → immediate GitHub push**.
+
+---
+
 ## Mission (domain)
 
 Guided bilingual probability knowledge tree (STAT2601). Peer track to ML; shared board on c-machine-learning.
