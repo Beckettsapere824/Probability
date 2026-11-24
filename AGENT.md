@@ -5,7 +5,9 @@ This repo uses the **real** portable pack (`skills/` ×15, `docs/HARNESS_*`, `in
 **Do not invent a thinner parallel harness.** Improvements go back upstream via `propose-improvement`.
 
 **Read order (mandatory before ANY write):**  
-`AGENT.md` → `MEMORY.md` → `docs/HARNESS_LESSONS.md` → skim `docs/HARNESS_PUSH_GATE.md` → `feature_list.json` → `progress.md` → `session-handoff.md` / `runs.md` → skim `skills/README.md` → (Orches) claim identity → domain files as needed.
+`AGENT.md` → `MEMORY.md` → **`CONSTRUCTION.md`（教学文本脚手架）** → `docs/HARNESS_LESSONS.md` → skim `docs/HARNESS_PUSH_GATE.md` → `feature_list.json` → `progress.md` → `session-handoff.md` / `runs.md` → skim `skills/README.md` → (Orches) claim identity → domain files as needed.
+
+**Teaching writes:** every `nodes/*.md` change must follow `CONSTRUCTION.md` (思路 first, guided narrative, no encyclopedia dump).
 
 Also read when under Orches `learn-*`:  
 `Beckettsapere824/c-machine-learning` → `STUDY_BOARD.md`, `learning/mastery.md`.
