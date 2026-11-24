@@ -34,17 +34,53 @@
     status: stub
     source: course/SDST2601A/chapter-05.md
   - id: M8.3
-    name: 均匀分布 U(a,b)
+    name: Uniform U(a,b) / 均匀分布
+    module: M8
     prereq: [M8.1]
-    content: []
-    status: stub
-    source: course/SDST2601A/distributions-summary.md
+    status: teaching
+    source: SDST2601A Ch5 §5.2.1 Def 5.3
+    思路:
+      读者起点: "已理解 pdf 是面积不是高度，会做简单归一化。"
+      核心问题: "如何用一个最简单的连续律表达『在区间 (a,b) 上完全无偏好』？"
+      叙事路径:
+        - "动机：指针、随机时刻、无方向偏好的角度。"
+        - "常值密度 1/(b-a)，矩形面积为 1。"
+        - "写出 F、均值中点、方差 (b-a)^2/12。"
+        - "手算杆的方位角 U(0,2π)。"
+      必须建立的直觉:
+        - "均匀 = 连续版的等可能。"
+        - "概率 = 长度比。"
+      易错点: "分母写成 b 而非 b-a；方差公式记成 /12 掉了平方。"
+      出口衔接: "等待时间往往不是均匀，而是指数。"
+      成功标准: "能默写 U(a,b) 的 f、F、E、Var，并算子区间概率。"
+    content:
+      - "f=1/(b-a) on (a,b)"
+      - "E=(a+b)/2, Var=(b-a)^2/12"
   - id: M8.4
-    name: 指数分布与无记忆性
+    name: Exponential and memorylessness / 指数分布与无记忆性
+    module: M8
     prereq: [M8.1]
-    content: []
-    status: stub
-    source: course/SDST2601A/distributions-summary.md
+    status: teaching
+    source: SDST2601A Ch5 §5.2.2 Def 5.4, Ex 5.5–5.6
+    思路:
+      读者起点: "会积分算连续概率；可能把『已等待很久』当成会改变剩余寿命。"
+      核心问题: "到达率稳定的等待时间如何建模？为何『已经等了 a 还要再等 b』等于『从零再等 b』？"
+      叙事路径:
+        - "引入 rate λ 的指数密度 λe^{-λx}。"
+        - "推导 F、均值 1/λ、方差 1/λ^2。"
+        - "证明无记忆性 Pr(X>a+b|X>a)=Pr(X>b)。"
+        - "强调：连续正支撑上只有指数有无记忆性。"
+        - "分清 rate λ 与 mean β=1/λ 两种记法。"
+        - "手算条件残寿命（课件机器例）。"
+      必须建立的直觉:
+        - "无记忆：过去不改变未来残寿分布。"
+        - "λ 大 → 平均等待短。"
+      易错点: "rate/mean 混用；对非指数寿命套无记忆性。"
+      出口衔接: "多个指数等待之和 → Gamma；生存分析用 S 与 hazard。"
+      成功标准: "能陈述并应用无记忆性；能在给定 λ 下算尾概率与条件残寿。"
+    content:
+      - "Exp(λ): f=λe^{-λx}, E=1/λ"
+      - "memoryless: Pr(X>a+b|X>a)=Pr(X>b)"
   - id: M8.5
     name: Gamma 分布
     prereq: [M8.4]
