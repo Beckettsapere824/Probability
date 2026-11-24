@@ -1,12 +1,32 @@
-  # ================= M8 连续分布与生存分析（索引占位；内容待补） =================
-  # Source: SDST2601A Ch5–Ch6 + distributions-summary continuous rows.
-  # Content empty — library index only; teach fills later.
+  # ================= M8 Continuous distributions (SDST2601A Ch5–Ch6) =================
+  # Teach: 思路 first, then nodes/*.md guided narrative (CONSTRUCTION.md).
   - id: M8.1
-    name: 连续随机变量与 pdf
+    name: Continuous random variables and pdf / 连续随机变量与 pdf
+    module: M8
     prereq: [M1.8]
-    content: []
-    status: stub
-    source: course/SDST2601A/chapter-05.md
+    status: teaching
+    source: SDST2601A Ch5 §5.1 Def 5.1–5.2, Ex 5.1
+    思路:
+      读者起点: "已会离散 RV：样本点、pmf p(x)=Pr(X=x)、对点求和得概率。可能默认『概率只能贴在点上』。"
+      核心问题: "身高、时间这类连续量，单点概率为 0，如何严格说『落在某个区间的机会』？密度 f 与面积有什么关系？"
+      叙事路径:
+        - "从直方图出发：相对频率密度 × 组距 = 面积 ≈ 频率；总面积 1。"
+        - "把直方图变光滑：极限意义下用 f(x) 描述『单位长度上的概率质量』。"
+        - "形式化：F(x)=∫_{-∞}^{x} f，f 叫 pdf；强调 f(x) 本身不是概率。"
+        - "列出 pdf 五条性质，特别是 Pr(X=a)=0 与区间端点无关。"
+        - "手算归一化：给定未定系数的 f，用 ∫f=1 解 c（课件 Ex 5.1）。"
+        - "出口：有了 f 才能谈连续型的期望与常见族（均匀、指数、正态）。"
+      必须建立的直觉:
+        - "连续概率看的是面积，不是高度。"
+        - "单点概率恒为 0；有意义的是区间。"
+        - "∫ f = 1 与离散 ∑ p = 1 对应。"
+      易错点: "把 f(x) 当成 Pr(X=x)；端点开闭改变概率；忘记归一化就算期望。"
+      出口衔接: "下一节点做更多归一化与性质练习；再进入 U/Exp/Normal 等具体族。"
+      成功标准: "能解释为何 Pr(X=a)=0；能对手给的 f 解出归一化常数并算一个区间概率。"
+    content:
+      - "连续型：F(x)=∫ f，f=pdf"
+      - "f≥0，∫f=1，Pr(A)=∫_A f"
+      - "Pr(X=a)=0；区间概率=F(b)-F(a)"
   - id: M8.2
     name: pdf 性质与归一化
     prereq: [M8.1]
