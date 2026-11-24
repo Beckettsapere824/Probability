@@ -1,9 +1,22 @@
 # SDST2601A → Probability nodes mapping
 
 Indexed 2026-11-24 by learn-library-1.  
-Course extracts: `course/SDST2601A/`. Teaching nodes: `nodes/`. Machine tree: `data/prerequisite_tree.yaml`.
+Course extracts: `course/SDST2601A/`. Teaching nodes: `nodes/`. Knowledge tree: `data/tree/` + `data/prerequisite_tree.yaml`.
 
-**Detail level of chapter extracts**: structural (definitions, theorems, key examples, formula tables). Enough for catalog + mapping; not yet full teaching-node quality. Continuous topics were the main gap in the existing tree and are now indexed as **M8 stubs** (content empty).
+**Detail level of chapter extracts**: structural (definitions, theorems, key examples, formula tables). Enough for catalog + mapping; not yet full teaching-node quality. Continuous topics were the main gap and are indexed as **M8 stubs** (content empty).
+
+## Knowledge tree layout (restored)
+
+| Path | Role |
+|------|------|
+| `data/prerequisite_tree.yaml` | Index / modules list (multipart pointer) |
+| `data/tree/00_meta.yaml` | meta header |
+| `data/tree/M0.yaml` … `M8.yaml` | Full node definitions by module |
+| `data/tree/99_study_order.yaml` | study_order + quality_checks |
+| `nodes/M8.*.md` | Continuous stubs (index only) |
+
+Assemble single file if needed:  
+`cat data/tree/00_meta.yaml data/tree/M{0..8}.yaml data/tree/99_study_order.yaml`
 
 ## Chapter → nodes
 
@@ -49,15 +62,6 @@ Course extracts: `course/SDST2601A/`. Teaching nodes: `nodes/`. Machine tree: `d
 
 ## How library vs teach should use this
 
-1. **Library**: keep this map and `course/SDST2601A/*` in sync with new drops; extend stubs only when a new course topic appears.
-2. **Teach**: when human asks for continuous topics, fill the corresponding `nodes/M8.*.md` from the course extract + standard formulas; then clear `status: stub` in the YAML.
+1. **Library**: keep this map and `course/SDST2601A/*` in sync; extend stubs only when a new course topic appears.
+2. **Teach**: when human asks for continuous topics, fill `nodes/M8.*.md` from course extract + standard formulas; clear `status: stub` in `data/tree/M8.yaml`.
 3. **Assess**: treat M8.* as unknown until content exists; discrete M0–M7 remain the active Exam-2 spine.
-
-## study_order note
-
-After restoring `data/prerequisite_tree.yaml` from commit `ec0aff8` and merging `M8_TREE_FRAGMENT.yaml`, study_order should end with `[M8.1 … M8.11]`. Topology: M8.1 ← M1.8; continuous families ← M8.1; survival ← M8.1; continuous joint ← M8.1 + M1.10.
-
-## Status note (2026-11-24 evening)
-
-- `nodes/M8.*.md` stubs and this NODE_MAP are live.
-- `data/prerequisite_tree.yaml` needs one restore step from commit `ec0aff8` (accidental PLACEHOLDER write during bulk push). See recovery comment currently in that file; then merge `course/SDST2601A/M8_TREE_FRAGMENT.yaml`.
