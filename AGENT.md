@@ -1,38 +1,64 @@
-# AGENT.md — Probability study repo
+# AGENT.md — Probability study repo (HARDENED)
 
-**Read order:** `AGENT.md` → `MEMORY.md` (if present) → skim `skills/README.md` → `progress.md` / `session-handoff.md` → `data/prerequisite_tree.yaml` / target `nodes/`.
+**Read order (mandatory before ANY write):**  
+`AGENT.md` → `MEMORY.md` → skim `skills/README.md` → `progress.md` / `session-handoff.md` → target file only.
 
-**Coordination board (both tracks):** always also read  
-`Beckettsapere824/c-machine-learning` → `STUDY_BOARD.md` and `learning/mastery.md` when working under Orches `learn-*` identities.
+**Also read when under Orches learn-*:**  
+`Beckettsapere824/c-machine-learning` → `STUDY_BOARD.md`, `learning/mastery.md`.
 
 ---
 
 ## Mission
 
-Maintain a guided, bilingual probability knowledge tree (STAT2601-oriented). This is a **full peer track** to ML, not a secondary leftover. Cross-track status lives on the c-machine-learning STUDY_BOARD so one dashboard covers both.
+Maintain guided bilingual probability nodes (STAT2601). Peer track to ML. Shared board on c-machine-learning.
+
+---
+
+## HARD BANS (non-negotiable — violation = stop and report to human)
+
+1. **Never delete** `nodes/*.md`, `data/tree/*.yaml`, full tree content, `exercises/*`, or `course/**` bulk trees.
+2. **Never replace** a large YAML/node with a short PLACEHOLDER, “pointer only”, or empty stub **unless** the human explicitly ordered that exact replace.
+3. **Never** “simplify” by collapsing the whole prerequisite tree into one tiny file.
+4. **Prefer append / surgical edit.** One node or one module section at a time.
+5. **If a file looks wrong or huge:** read more, ask human, or restore from git history — do **not** blank it.
+6. **No force-push.** No rewriting history.
+7. **Push only real content.** No commit whose sole effect is wiping knowledge.
+
+If you already deleted something this session: **stop**, report paths, help restore from prior commit. Do not continue “cleanup.”
+
+---
+
+## Knowledge tree layout (current)
+
+- Index pointer: `data/prerequisite_tree.yaml` (multipart index — OK to keep short)
+- **Real content:** `data/tree/M0.yaml` … `M8.yaml`, `00_meta.yaml`, `99_study_order.yaml`
+- Nodes: `nodes/*.md`
+- Course catalog: `course/SDST2601A/`
+
+Edits belong in the **part files** or **one node**, not by deleting parts.
 
 ---
 
 ## Orches roles
 
-| Identity | Work here |
-|----------|-----------|
-| learn-teach-* | Write/optimize `nodes/*.md`, align YAML 思路 |
-| learn-library-* | Rarely; only if Prob course files need indexing (index rows may live on c-ml resources/) |
-| learn-assess-* | Update mastery on c-ml `learning/mastery.md` for Probability section |
+| Identity | Work |
+|----------|------|
+| learn-teach-* | Optimize **one** node or fill empty M8 stubs carefully |
+| learn-library-* | Index only; do not delete course dumps |
+| learn-assess-* | Mastery on c-ml board only |
 
 ---
 
 ## Content rules
 
-1. One concept per node; topological order in study_order / YAML.
-2. Bilingual: full EN paragraph then full ZH paragraph.
-3. Prereq links at top, dependents at bottom; example + one practice item.
-4. Skills auto-match (anti-drift, plan, implement, verify, handoff).
-5. Local first → immediate push.
+1. One concept per node; respect study order.
+2. Bilingual EN then ZH.
+3. Skills auto-match; anti-drift every startup.
+4. Local first → immediate push.
+5. After destructive risk avoided: update progress + handoff.
 
 ---
 
-## Sync with primary board
+## Startup assertion (must state before edits)
 
-After meaningful teach/assess work, update c-machine-learning `progress.md` or `learning/mastery.md` via connector so the shared board stays true.
+(a) identity (b) read order done (c) track=prob (d) **next exact one file** (e) hard bans acknowledged.
