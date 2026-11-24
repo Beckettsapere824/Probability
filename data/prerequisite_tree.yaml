@@ -1,17 +1,35 @@
-# TEMPORARY — restore required
-#
-# This file was accidentally overwritten with PLACEHOLDER on 2026-11-24.
-# Restore the full tree from the last good commit:
-#
-#   git checkout ec0aff8e282a88a297961b9f039102c3756015b5 -- data/prerequisite_tree.yaml
-#
-# Or download:
-#   https://raw.githubusercontent.com/Beckettsapere824/Probability/ec0aff8e282a88a297961b9f039102c3756015b5/data/prerequisite_tree.yaml
-#
-# Continuous-topic index (M8 stubs) is already available without this file:
-#   - course/SDST2601A/NODE_MAP.md
-#   - course/SDST2601A/M8_TREE_FRAGMENT.yaml  (YAML fragment to merge after restore)
-#   - nodes/M8.1.md … nodes/M8.11.md
-#
-# After restore, append M8_TREE_FRAGMENT.yaml into the nodes: list, add module M8,
-# and append the M8 study_order line.
+meta:
+  name: STAT2601_Exam2_Knowledge_Prerequisite_Tree
+  format: structured_prerequisite_tree
+  usage:
+    - "agent 按 prereq 做拓扑排序；未满足 prereq 时先学前置节点。"
+    - "每个节点是可直接教学/检查的最小知识单元。"
+    - "content 中的公式和步骤应能直接用于解题。"
+  modules:
+    M0: 数学与记号基础
+    M1: 概率基础与条件概率
+    M2: 组合计数与抽样模型
+    M3: 离散随机变量：期望、方差、变换
+    M4: 常见离散分布与性质
+    M5: 条件、贝叶斯与条件计数专题
+    M6: 随机过程与长期频率
+    M7: 应用模型与综合题
+    M8: 连续分布与生存分析（来自 SDST2601A；内容待补）
+
+nodes:
+  # ================= M0 数学与记号基础 =================
+  - id: M0.1
+    name: 集合与事件语言
+    prereq: []
+    content:
+      - 集合交并补、子集、空集、全集。
+      - 互斥：A ∩ B = ∅；穷尽：A ∪ B = Ω。
+      - De Morgan 律：(A ∪ B)^c = A^c ∩ B^c，(A ∩ B)^c = A^c ∪ B^c。
+      - 把文字事件翻译成集合事件：至少一个、恰好一个、都不、至少两个、全部。
+  - id: M0.2
+    name: 计数两大原理
+    prereq: [M0.1]
+    content:
+      - 加法原理：分类完成，类间互斥，总数相加。
+      - 乘法原理：分步完成，每步选择数相乘。
+      - 先判断：是否有顺序、是否可重复、对象是否可区分、是否允许空盒/空类。
