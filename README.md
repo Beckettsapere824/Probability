@@ -4,6 +4,13 @@ This repository hosts a structured prerequisite tree for a probability theory co
 
 本仓库存放概率论课程（以 STAT2601 Exam 2 为重点）的结构化前置知识树。每个知识节点是最小教学单元，包含公式、步骤、易错点、例子和一道练习题。
 
+## Multi-agent study (Orches project `learn`)
+
+- **Primary study board:** `Beckettsapere824/c-machine-learning` (`STUDY_BOARD.md`, `learning/mastery.md`)
+- **learn-teach-*** may optimize nodes here when the board prioritizes Probability
+- **learn-assess-*** tracks mastery for this tree as a secondary track
+- ML course content lives primarily in c-machine-learning, not here
+
 ## Structure / 结构
 
 - `data/prerequisite_tree.yaml`: Full machine-readable prerequisite tree (nodes, prereqs, content outlines, study order).
