@@ -1,8 +1,9 @@
 ---
 name: status-report
-description: Summarize Probability focus and gaps.
+description: Emit a structured status suitable for Orches registry or human dashboard.
 ---
 
 # status-report
 
-Point at c-ml mastery Probability section + local progress.
+## Format
+- id, status, current_focus, next_exact, blockers, last_activity, one-line evidence/risk

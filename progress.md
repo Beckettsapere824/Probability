@@ -2,11 +2,12 @@
 
 ## Current
 
-- Track active under Orches learn (peer to ML).
-- **Next exact:** On teach claim, pick node from human or from c-ml STUDY_BOARD / mastery gaps; on assess, update Probability section of learning/mastery.md on c-ml.
+- **Active feature:** STUDY-SAFE (in_progress)
+- **Next exact:** Any learn-* dialog: complete anti-drift; edit at most one node or one data/tree module section; run push-gate mindset; no bulk deletes.
+- **Done:** HARNESS-TX — full agent-harness core transplanted 2026-11-24.
 
 ## Recent
 
 ### 2026-11-24
 
-- Harness + dual-track link initialized.
+- Replaced thin study stubs with upstream skills/docs/tools.

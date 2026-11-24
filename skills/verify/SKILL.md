@@ -1,8 +1,19 @@
 ---
 name: verify
-description: Check node completeness before done.
+description: Run mechanical verification and record evidence; never mark done on self-assessment alone.
 ---
 
 # verify
 
-EN+ZH, links, example, practice present.
+## When to use
+Before any “done” claim and at the end of a substantive step.
+
+## Steps
+1. Run `./init.sh` when present.
+2. Run `./audit-harness.sh` and `./tools/assert_no_stub.sh` when present.
+3. Run feature-specific checks.
+4. Capture exit codes / key output.
+5. Write evidence into feature_list.json or progress.md.
+
+## Rule
+Model self-praise is not evidence.

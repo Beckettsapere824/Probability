@@ -1,8 +1,16 @@
 ---
 name: implement
-description: Write or revise one probability node.
+description: Implement exactly one unfinished feature under scope lock; produce evidence before claiming done.
 ---
 
 # implement
 
-One node file; bilingual; prereqs; practice item; push.
+## When to use
+After plan is written and the next exact step is clear.
+
+## Rules
+- Touch only files required by the active feature.
+- Do not start a second feature.
+- After each meaningful change, run verification.
+- Record evidence in feature_list.json or progress.md before marking status=done.
+- Leave the repository restartable.

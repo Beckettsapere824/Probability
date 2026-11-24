@@ -1,8 +1,20 @@
 ---
 name: plan
-description: Ordered steps before node or YAML edits.
+description: Produce an ordered, verifiable step list for the single active feature before any file edits.
 ---
 
 # plan
 
-List node ids and YAML touches; then execute.
+## When to use
+Before implementing a feature or after brainstorm selects a direction.
+
+## Steps
+1. Confirm the single active feature from feature_list.json.
+2. Break work into the smallest sequence of verifiable steps.
+3. Each step must end with a checkable outcome.
+4. Identify the exact next step (“Next exact”).
+5. Write the plan into progress.md.
+
+## Rules
+- One feature only.
+- No step may assume later steps already exist.

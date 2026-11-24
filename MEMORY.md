@@ -2,17 +2,17 @@
 
 ## Status (2026-11-24)
 
-- Dual-track study with c-machine-learning STUDY_BOARD (Orches project learn).
-- Full node tree exists; mastery mostly unknown until assess runs.
-- Harness + skills added this date.
+- **Harness:** full transplant from agent-harness (15 skills, push-gate, compliance, init/audit/assert).
+- Dual-track with c-machine-learning STUDY_BOARD.
+- Knowledge: data/tree multipart + nodes; do not collapse.
 
 ## Pitfalls
 
-- Do not skip prereqs in study_order.
-- Mastery evidence lives on c-ml learning/mastery.md.
+- Tree wipe under “cleanup” — banned.
+- Thin custom skills — banned; use upstream pack.
 
 ## Log
 
 ### 2026-11-24
 
-- AGENT.md, skills/, progress, session-handoff; linked to shared board.
+- HARNESS-TX complete; STUDY-SAFE active.

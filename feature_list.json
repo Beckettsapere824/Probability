@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "repo": "Probability",
+  "harness_upstream": "Beckettsapere824/agent-harness",
+  "features": [
+    {
+      "id": "HARNESS-TX",
+      "title": "Transplant agent-harness core into this study repo",
+      "status": "done",
+      "definition_of_done": [
+        "skills/ has full 15-skill pack from upstream",
+        "docs/HARNESS_PUSH_GATE.md + HARNESS_LESSONS + COMPLIANCE_REVIEW present",
+        "init.sh, audit-harness.sh, tools/assert_no_stub.sh present",
+        "AGENT.md states upstream transplant + domain hard bans"
+      ],
+      "evidence": "2026-11-24 transplant commit"
+    },
+    {
+      "id": "STUDY-SAFE",
+      "title": "No destructive tree rewrites; surgical node edits only",
+      "status": "in_progress",
+      "definition_of_done": [
+        "AGENT.md hard bans enforced in practice",
+        "No PLACEHOLDER collapses of data/tree or nodes"
+      ],
+      "evidence": ""
+    }
+  ]
+}

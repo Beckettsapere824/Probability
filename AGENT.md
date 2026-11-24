@@ -1,64 +1,52 @@
-# AGENT.md — Probability study repo (HARDENED)
+# AGENT.md — Probability (agent-harness transplant)
+
+**Upstream harness:** `Beckettsapere824/agent-harness`  
+This repo uses the **real** portable pack (`skills/` ×15, `docs/HARNESS_*`, `init.sh`, `audit-harness.sh`, `tools/assert_no_stub.sh`).  
+**Do not invent a thinner parallel harness.** Improvements go back upstream via `propose-improvement`.
 
 **Read order (mandatory before ANY write):**  
-`AGENT.md` → `MEMORY.md` → skim `skills/README.md` → `progress.md` / `session-handoff.md` → target file only.
+`AGENT.md` → `MEMORY.md` → `docs/HARNESS_LESSONS.md` → skim `docs/HARNESS_PUSH_GATE.md` → `feature_list.json` → `progress.md` → `session-handoff.md` / `runs.md` → skim `skills/README.md` → (Orches) claim identity → domain files as needed.
 
-**Also read when under Orches learn-*:**  
+Also read when under Orches `learn-*`:  
 `Beckettsapere824/c-machine-learning` → `STUDY_BOARD.md`, `learning/mastery.md`.
 
----
-
-## Mission
-
-Maintain guided bilingual probability nodes (STAT2601). Peer track to ML. Shared board on c-machine-learning.
+Run `./init.sh` when shell available. Prefer `./tools/assert_no_stub.sh` before non-trivial push.
 
 ---
 
-## HARD BANS (non-negotiable — violation = stop and report to human)
+## Mission (domain)
 
-1. **Never delete** `nodes/*.md`, `data/tree/*.yaml`, full tree content, `exercises/*`, or `course/**` bulk trees.
-2. **Never replace** a large YAML/node with a short PLACEHOLDER, “pointer only”, or empty stub **unless** the human explicitly ordered that exact replace.
-3. **Never** “simplify” by collapsing the whole prerequisite tree into one tiny file.
-4. **Prefer append / surgical edit.** One node or one module section at a time.
-5. **If a file looks wrong or huge:** read more, ask human, or restore from git history — do **not** blank it.
-6. **No force-push.** No rewriting history.
-7. **Push only real content.** No commit whose sole effect is wiping knowledge.
-
-If you already deleted something this session: **stop**, report paths, help restore from prior commit. Do not continue “cleanup.”
+Guided bilingual probability knowledge tree (STAT2601). Peer track to ML; shared board on c-machine-learning.
 
 ---
 
-## Knowledge tree layout (current)
+## HARD BANS (domain + push-gate)
 
-- Index pointer: `data/prerequisite_tree.yaml` (multipart index — OK to keep short)
-- **Real content:** `data/tree/M0.yaml` … `M8.yaml`, `00_meta.yaml`, `99_study_order.yaml`
-- Nodes: `nodes/*.md`
-- Course catalog: `course/SDST2601A/`
-
-Edits belong in the **part files** or **one node**, not by deleting parts.
-
----
-
-## Orches roles
-
-| Identity | Work |
-|----------|------|
-| learn-teach-* | Optimize **one** node or fill empty M8 stubs carefully |
-| learn-library-* | Index only; do not delete course dumps |
-| learn-assess-* | Mastery on c-ml board only |
+1. **Never delete** bulk `nodes/*`, `data/tree/*`, `exercises/*`, `course/**`.
+2. **Never** replace a large knowledge file with PLACEHOLDER / empty pointer unless human ordered that exact change.
+3. **Never** “simplify” by collapsing the whole tree in one shot.
+4. **Surgical edits only** — one node or one module section.
+5. If already deleted this session: **stop**, report, restore — do not continue cleanup.
+6. Follow `skills/push-gate` and `docs/HARNESS_PUSH_GATE.md`.
 
 ---
 
-## Content rules
+## Multi-agent
 
-1. One concept per node; respect study order.
-2. Bilingual EN then ZH.
-3. Skills auto-match; anti-drift every startup.
-4. Local first → immediate push.
-5. After destructive risk avoided: update progress + handoff.
+One shared harness in this repo. Role differences live in Orches identities (`learn-teach-*`, etc.), not forked AGENT.md copies.
 
 ---
 
-## Startup assertion (must state before edits)
+## Working rules (from upstream)
 
-(a) identity (b) read order done (c) track=prob (d) **next exact one file** (e) hard bans acknowledged.
+- One feature / one focus at a time (`feature_list.json`).
+- Verification + evidence before “done”.
+- Local first → immediate push.
+- Anti-drift assertion every dialog.
+- Compliance review misses = DIALOG_MISS (see `docs/COMPLIANCE_REVIEW.md`).
+
+---
+
+## End of session
+
+Update progress (**Next exact**), handoff fields, prepend `runs.md`, release Orches claim if any.
