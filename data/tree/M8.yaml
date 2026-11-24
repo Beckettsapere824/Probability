@@ -82,17 +82,52 @@
       - "Exp(λ): f=λe^{-λx}, E=1/λ"
       - "memoryless: Pr(X>a+b|X>a)=Pr(X>b)"
   - id: M8.5
-    name: Gamma 分布
+    name: Gamma and chi-squared / Gamma 与卡方
+    module: M8
     prereq: [M8.4]
-    content: []
-    status: stub
-    source: course/SDST2601A/distributions-summary.md
+    status: teaching
+    source: SDST2601A Ch5 §5.2.3 Def 5.5–5.7
+    思路:
+      读者起点: "已会单个指数等待与无记忆性。"
+      核心问题: "第 n 次泊松事件的到达时间如何分布？卡方表从哪来？"
+      叙事路径:
+        - "Gamma 函数 Γ(α) 与阶乘推广。"
+        - "shape-rate 密度；E=α/λ。"
+        - "n 个 i.i.d. Exp 之和 = Γ(n,λ)。"
+        - "α=r/2, λ=1/2 → χ²(r)。"
+      必须建立的直觉:
+        - "Gamma 是『多个指数等待的总时间』。"
+        - "卡方是 Gamma 的特款，服务推断表。"
+      易错点: "rate/scale 混用导致期望差一倍。"
+      出口衔接: "正态与卡方在抽样分布中相遇。"
+      成功标准: "能写 Γ(α,λ) 的 f、E、Var，并说明 χ²(r) 的参数对应。"
+    content:
+      - "Γ(α,λ) rate form; E=α/λ"
+      - "χ²(r)=Γ(r/2,1/2)"
   - id: M8.6
-    name: 正态分布
+    name: Normal distribution / 正态分布
+    module: M8
     prereq: [M8.1]
-    content: []
-    status: stub
-    source: course/SDST2601A/distributions-summary.md
+    status: teaching
+    source: SDST2601A Ch5 §5.2.4 Def 5.8
+    思路:
+      读者起点: "会连续 pdf 与区间积分；需要可查表的对称钟形律。"
+      核心问题: "如何把任意 N(μ,σ²) 的区间概率化成 Φ 表上的标准问题？"
+      叙事路径:
+        - "动机：对称聚集在中心的测量。"
+        - "pdf、mgf、E=μ、Var=σ²。"
+        - "标准化 Z=(X-μ)/σ。"
+        - "Φ 表与对称 Φ(-z)=1-Φ(z)。"
+        - "68-95-99.7 经验规则。"
+      必须建立的直觉:
+        - "先标准化，再查表。"
+        - "σ 是钟形的宽度旋钮。"
+      易错点: "第二参数当 σ 还是 σ²；右尾忘了 1-Φ。"
+      出口衔接: "二项正态近似；与卡方/t 的关系。"
+      成功标准: "能将 Pr(a<X<b) 写成 Φ 的差并处理负自变量。"
+    content:
+      - "N(μ,σ²); standardize to Φ"
+      - "MGF exp(μt+σ²t²/2)"
   - id: M8.7
     name: 卡方、t、F 分布（索引）
     prereq: [M8.6]
@@ -106,11 +141,28 @@
     status: stub
     source: course/SDST2601A/distributions-summary.md
   - id: M8.9
-    name: 生存函数与风险率
-    prereq: [M8.1]
-    content: []
-    status: stub
-    source: course/SDST2601A/chapter-06.md
+    name: Survival and hazard / 生存函数与风险率
+    module: M8
+    prereq: [M8.1, M8.4]
+    status: teaching
+    source: SDST2601A Ch6 §6.1 Def 6.1
+    思路:
+      读者起点: "会 F 与指数无记忆性；未必区分『已失效』与『仍存活』。"
+      核心问题: "如何描述活到 t 的概率，以及活到 t 后瞬时失效的强度？"
+      叙事路径:
+        - "S(t)=1-F(t)。"
+        - "λ(t)=f(t)/S(t) 条件失效强度。"
+        - "由 λ 重建 F：F=1-exp(-∫λ)。"
+        - "指数 = 常数风险；递增风险更贴近老化。"
+      必须建立的直觉:
+        - "S 看存活；λ 看『这个年纪有多容易坏』。"
+        - "常数 λ ↔ 无记忆。"
+      易错点: "把 f 叫做 failure rate；对非指数套无记忆。"
+      出口衔接: "变换分布、Weibull 等由 hazard 构造。"
+      成功标准: "能由 F 写 S 与 λ；能解释指数的常数风险。"
+    content:
+      - "S=1-F; λ=f/S"
+      - "F=1-exp(-∫λ)"
   - id: M8.10
     name: 连续联合与边缘（索引）
     prereq: [M8.1, M1.10]
