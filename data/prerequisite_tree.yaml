@@ -1,1 +1,17 @@
-PLACEHOLDER
+# TEMPORARY — restore required
+#
+# This file was accidentally overwritten with PLACEHOLDER on 2026-11-24.
+# Restore the full tree from the last good commit:
+#
+#   git checkout ec0aff8e282a88a297961b9f039102c3756015b5 -- data/prerequisite_tree.yaml
+#
+# Or download:
+#   https://raw.githubusercontent.com/Beckettsapere824/Probability/ec0aff8e282a88a297961b9f039102c3756015b5/data/prerequisite_tree.yaml
+#
+# Continuous-topic index (M8 stubs) is already available without this file:
+#   - course/SDST2601A/NODE_MAP.md
+#   - course/SDST2601A/M8_TREE_FRAGMENT.yaml  (YAML fragment to merge after restore)
+#   - nodes/M8.1.md … nodes/M8.11.md
+#
+# After restore, append M8_TREE_FRAGMENT.yaml into the nodes: list, add module M8,
+# and append the M8 study_order line.
