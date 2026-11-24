@@ -1,0 +1,71 @@
+# M8 continuous stubs (append into data/prerequisite_tree.yaml under nodes:)
+# Also add to meta.modules: M8: 连续分布与生存分析（来自 SDST2601A；内容待补）
+# And study_order last list: [M8.1, M8.2, M8.3, M8.4, M8.5, M8.6, M8.7, M8.8, M8.9, M8.10, M8.11]
+
+  # ================= M8 连续分布与生存分析（索引占位；内容待补） =================
+  - id: M8.1
+    name: 连续随机变量与 pdf
+    prereq: [M1.8]
+    content: []
+    status: stub
+    source: course/SDST2601A/chapter-05.md
+  - id: M8.2
+    name: pdf 性质与归一化
+    prereq: [M8.1]
+    content: []
+    status: stub
+    source: course/SDST2601A/chapter-05.md
+  - id: M8.3
+    name: 均匀分布 U(a,b)
+    prereq: [M8.1]
+    content: []
+    status: stub
+    source: course/SDST2601A/distributions-summary.md
+  - id: M8.4
+    name: 指数分布与无记忆性
+    prereq: [M8.1]
+    content: []
+    status: stub
+    source: course/SDST2601A/distributions-summary.md
+  - id: M8.5
+    name: Gamma 分布
+    prereq: [M8.4]
+    content: []
+    status: stub
+    source: course/SDST2601A/distributions-summary.md
+  - id: M8.6
+    name: 正态分布
+    prereq: [M8.1]
+    content: []
+    status: stub
+    source: course/SDST2601A/distributions-summary.md
+  - id: M8.7
+    name: 卡方、t、F 分布（索引）
+    prereq: [M8.6]
+    content: []
+    status: stub
+    source: course/SDST2601A/distributions-summary.md
+  - id: M8.8
+    name: Beta 分布
+    prereq: [M8.1]
+    content: []
+    status: stub
+    source: course/SDST2601A/distributions-summary.md
+  - id: M8.9
+    name: 生存函数与风险率
+    prereq: [M8.1]
+    content: []
+    status: stub
+    source: course/SDST2601A/chapter-06.md
+  - id: M8.10
+    name: 连续联合与边缘（索引）
+    prereq: [M8.1, M1.10]
+    content: []
+    status: stub
+    source: course/SDST2601A/chapter-07.md
+  - id: M8.11
+    name: 连续条件分布（索引）
+    prereq: [M8.10, M5.1]
+    content: []
+    status: stub
+    source: course/SDST2601A/chapter-08.md
