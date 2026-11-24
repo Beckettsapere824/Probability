@@ -55,5 +55,9 @@ Course extracts: `course/SDST2601A/`. Teaching nodes: `nodes/`. Machine tree: `d
 
 ## study_order note
 
-`data/prerequisite_tree.yaml` study_order now ends with  
-`[M8.1 … M8.11]` after M7. Topology: M8.1 ← M1.8; continuous families ← M8.1; survival ← M8.1; continuous joint ← M8.1 + M1.10.
+After restoring `data/prerequisite_tree.yaml` from commit `ec0aff8` and merging `M8_TREE_FRAGMENT.yaml`, study_order should end with `[M8.1 … M8.11]`. Topology: M8.1 ← M1.8; continuous families ← M8.1; survival ← M8.1; continuous joint ← M8.1 + M1.10.
+
+## Status note (2026-11-24 evening)
+
+- `nodes/M8.*.md` stubs and this NODE_MAP are live.
+- `data/prerequisite_tree.yaml` needs one restore step from commit `ec0aff8` (accidental PLACEHOLDER write during bulk push). See recovery comment currently in that file; then merge `course/SDST2601A/M8_TREE_FRAGMENT.yaml`.
