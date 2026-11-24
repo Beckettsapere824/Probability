@@ -1,0 +1,19 @@
+meta:
+  name: STAT2601_Exam2_Knowledge_Prerequisite_Tree
+  format: structured_prerequisite_tree
+  usage:
+    - "agent 按 prereq 做拓扑排序；未满足 prereq 时先学前置节点。"
+    - "每个节点是可直接教学/检查的最小知识单元。"
+    - "content 中的公式和步骤应能直接用于解题。"
+  modules:
+    M0: 数学与记号基础
+    M1: 概率基础与条件概率
+    M2: 组合计数与抽样模型
+    M3: 离散随机变量：期望、方差、变换
+    M4: 常见离散分布与性质
+    M5: 条件、贝叶斯与条件计数专题
+    M6: 随机过程与长期频率
+    M7: 应用模型与综合题
+    M8: 连续分布与生存分析（来自 SDST2601A；内容待补）
+
+nodes:
