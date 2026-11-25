@@ -2,13 +2,12 @@
 
 ## Current
 
-- **Active feature:** PRACTICE-EXPAND (from the back / remaining stubs)
-- **Next exact:** M2.12a–M2.19; M3 stubs.
-- **Status:**
-  - M2.3a, M2.8–M2.12 expanded this batch
-  - M4–M8 core/stubs previously completed
-  - Remaining: later M2 and most of M3
+- **Active feature:** PRACTICE-EXPAND
+- **Next exact:** M2.17–M2.19; then M3 stubs.
+- **Recent:** M2.6a, M2.12a, M2.13–M2.16 expanded.
+- **M2 progress:** most of M2.1–M2.16 done; few left.
+- **M3:** still largely stubs.
 
 ## Strategy
 
-Continue M2/M3 stubs; 8 MCQs each.
+Finish M2 remainder, then M3; 8 MCQs each.
