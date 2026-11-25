@@ -3,12 +3,15 @@
 ## Current
 
 - **Active feature:** PRACTICE-EXPAND (from the back)
-- **Next exact:** M4 stubs; leftover M2/M3 stubs; any remaining thin nodes.
-- **Modules largely complete (reverse push):**
+- **Next exact:** Remaining M2 stubs (M2.8–M2.19, M2.3a, M2.6a); M3 stubs (M3.1a–M3.10).
+- **Modules status:**
+  - M0–M1 core: done earlier
+  - M2.1–M2.7: done; M2.8+ still stubs
+  - M3: many stubs remain
+  - **M4 stubs complete** (M4.2a, M4.4a, M4.5a, M4.6a, M4.8, M4.9)
   - M5, M6, M7 complete
-  - M8 thin stubs done: M8.2, M8.7, M8.8, M8.11
-  - Earlier: M0–M1 core, M2.1–M2.7
+  - M8 thin stubs done
 
 ## Strategy
 
-Continue remaining stubs toward full coverage; 8 MCQs + collapsible solutions.
+Continue leftover M2/M3 stubs; 8 MCQs + collapsible solutions.
