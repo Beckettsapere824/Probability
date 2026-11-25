@@ -3,17 +3,17 @@
 ## Current
 
 - **Active feature:** PRACTICE-EXPAND (in_progress) + STUDY-SAFE
-- **Next exact:** Continue M1 nodes (convert practice to 5–10 MCQ + fill guided content where stubs remain). Then higher modules. Each node 5–10 MCQs with collapsible detailed solutions.
+- **Next exact:** Convert remaining fuller M1 nodes (M1.1–M1.6, M1.8, M1.10) practice sections to 5–10 MCQ format where still open-ended; then audit M2 stubs.
 - **Done this session (2026-11-25 learn-teach-3):**
-  - Expanded M0.4a, M0.5a, M0.6, M0.7, M0.8 to full guided bilingual narrative + 7–8 MCQs each with collapsible solutions.
-  - All M0 module nodes now at teaching standard (M0.1–M0.8 complete for PRACTICE-EXPAND).
+  - M0.4a, M0.5a, M0.6, M0.7, M0.8 expanded (earlier).
+  - M1 stubs expanded: M1.2a, M1.3a, M1.7, M1.8a, M1.9 — full guided bilingual + 8 MCQs each with collapsible solutions.
 
 ## Recent
 
 ### 2026-11-25
 
 - learn-teach-2: M0.1–M0.5 expanded.
-- learn-teach-3 claimed; M0.4a, M0.5a, M0.6–M0.8 expanded.
+- learn-teach-3: completed remaining M0; expanded five M1 stubs.
 
 ### 2026-11-24
 
