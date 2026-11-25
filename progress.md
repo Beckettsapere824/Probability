@@ -2,19 +2,12 @@
 
 ## Current
 
-- **Active feature:** PRACTICE-EXPAND (in_progress) + STUDY-SAFE
-- **Next exact:** Continue expanding remaining M2 stubs (M2.8+) to full guided + 5–10 MCQs; then audit higher modules as needed.
+- **Active feature:** PRACTICE-EXPAND (in_progress) — working **from the back**
+- **Next exact:** Continue high-end stubs: remaining M7.x, then M5.x / M8 thin stubs / M4 stubs; keep 5–10 MCQs + collapsible solutions.
 - **Done this session (2026-11-25 learn-teach-3):**
-  - M0 complete.
-  - M1: stubs expanded; practice converted to MCQs on M1.1, M1.2, M1.3–M1.6, M1.8, M1.10.
-  - M2.1–M2.7 expanded to full guided bilingual + 8 MCQs each.
+  - M0–M1 core + M2.1–M2.7 (earlier).
+  - **From back:** M6.1–M6.3, M7.10–M7.12 expanded (full guided + 8 MCQs each).
 
-## Recent
+## Strategy note
 
-### 2026-11-25
-
-- learn-teach-2 / learn-teach-3: full PRACTICE-EXPAND wave on M0–M2 core.
-
-### 2026-11-24
-
-- Harness transplant.
+User requested reverse order for speed while keeping quality. Prefer batching 3–6 stub nodes per push from highest remaining modules.
