@@ -3,19 +3,19 @@
 ## Current
 
 - **Active feature:** PRACTICE-EXPAND (in_progress) + STUDY-SAFE
-- **Next exact:** Convert practice on M1.1, M1.2, M1.8, M1.10 to 5–10 MCQ if still open-ended; then audit M2 stubs for expansion.
+- **Next exact:** Convert M1.1 / M1.2 / M1.10 practice to MCQ if still open-ended; continue expanding M2 stubs (M2.3 onward) to full guided + 5–10 MCQs.
 - **Done this session (2026-11-25 learn-teach-3):**
-  - M0 remaining stubs (M0.4a–M0.8) expanded.
-  - M1 stubs (M1.2a, M1.3a, M1.7, M1.8a, M1.9) expanded.
-  - M1.3, M1.4, M1.5, M1.6 practice converted to 8 MCQs each with collapsible solutions.
+  - M0 remaining + M1 stubs + M1.3–M1.6 MCQ conversion (earlier).
+  - M1.8 practice → 8 MCQs.
+  - M2.1, M2.2 expanded to full guided bilingual + 8 MCQs each.
 
 ## Recent
 
 ### 2026-11-25
 
-- learn-teach-2: M0.1–M0.5 expanded.
-- learn-teach-3: M0 finish; M1 stubs; M1.3–M1.6 MCQ conversion.
+- learn-teach-2: M0.1–M0.5.
+- learn-teach-3: M0 finish; M1 stubs; M1.3–M1.6 & M1.8 MCQs; M2.1–M2.2 expand.
 
 ### 2026-11-24
 
-- Replaced thin study stubs with upstream skills/docs/tools.
+- Harness transplant.
